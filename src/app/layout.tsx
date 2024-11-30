@@ -11,7 +11,10 @@ import { dark } from "@clerk/themes";
 import { ThemeProvider } from "@/components";
 
 export const metadata: Metadata = {
-  title: "CrewHive",
+  title: {
+    default: "Crewhive",
+    template: "%s | Crewhive",
+  },
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
